@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@snapshot-labs/snapshot.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            max-width: 100%;
+            max-height: 100%;
+            overflow: hidden;
+            /* Hide scrollbars */
+        }
+
+        .main {
+            padding: 20px 0;
+            float: auto;
+            width: 100%;
+            overflow: none;
+            background-color: black;
+            width: 50%;
+            padding: 10px;
+            vertical-align: middle;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2%;
+        }
+
+        img {
+            max-width: 50%;
+            max-height: 50%;
+            vertical-align: middle;
+            display: block;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+
+        p {
+            color: #4ab373;
+            text-align: center;
+            font-size: 18px;
+            font-family: 'Delius Unicase', cursive;
+        }
+
+        @media only screen and (max-width:800px) {
+
+            /* For tablets: */
+            .main {
+                width: 80%;
+                padding: 0;
+                margin: auto;
+                padding: 70px 0;
+            }
+
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                display: block;
+                /* remove extra space below image */
+                padding: 70px 0;
+            }
+        }
+
+        @media only screen and (max-width:500px) {
+
+            /* For mobile phones: */
+            .main,
+                {
+                width: 70%;
+                padding: 70px 0;
+            }
+
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                display: block;
+                /* remove extra space below image */
+                padding: 70px 0;
+            }
+        }
+    </style>
+
+    <link rel=" stylesheet" href="button.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+</head>
+
+<body style=" max-height: 100px; width: 100vw;">
+
+    <div class="main">
+        <img src="imgs/Zombie.gif" style="width: fit-content;">
+        <p style="color:oragne;">The travels of your DeadFella(z) through the start of the apocalypse, where at every
+            corner humans lurk in the shadows trying to turn you into one of them. Find your horde, find a cure, the
+            future awaits. </p>
+        <button id="btn-login">Login</button>
+        <button id="btn-logout">Logout</button>
+        <p style="font-size: 12px;" id="holder"></p>
+
+        <script type="text/javascript" src="./main.js"></script>
+
+
+    </div>
+
+
+</body>
+
+</html>
